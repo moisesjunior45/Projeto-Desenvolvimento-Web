@@ -41,7 +41,7 @@ nav {
 }
 
 .slider {
-  background: url("./img/floor.jpg");
+  background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
   overflow: hidden;
 }
@@ -99,7 +99,7 @@ nav {
   top: 50%;
   right: 10%;
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 900;
   color: white;
   border: 1px solid gray;
   background-color: black;
@@ -129,19 +129,19 @@ nav {
 }
 
 .sliderItem:nth-child(1) .sliderPrice {
-  color: #ffffff;
+  color: #369e62;
 }
 .sliderItem:nth-child(2) .sliderPrice {
   color: white;
 }
 .sliderItem:nth-child(3) .sliderPrice {
-  color: #fdfdfd;
+  color: teal;
 }
 .sliderItem:nth-child(4) .sliderPrice {
-  color: rgb(255, 255, 255);
+  color: cornflowerblue;
 }
 .sliderItem:nth-child(5) .sliderPrice {
-  color: #ffffff;
+  color: #b6006a;
 }
 
 .features {
@@ -183,8 +183,8 @@ nav {
 }
 
 .payment {
-  width: 600px;
-  height: 650px;
+  width: 500px;
+  height: 500px;
   background-color: white;
   position: absolute;
   top: 0;
