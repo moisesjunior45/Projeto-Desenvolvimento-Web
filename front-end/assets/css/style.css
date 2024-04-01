@@ -298,10 +298,10 @@ label {
 
 .productDetails {
   position: absolute;
-  top: 10%;
-  right: 0;
-  width: 40%;
-  padding: 50px;
+  top: 5%;
+  /* right: 0; */
+  /* width: 40%; */
+  padding: 125px;
 }
 
 .productTitle {
