@@ -124,13 +124,23 @@ currentProductSizes.forEach((size, index) => {
   });
 });
 
-const productButton = document.querySelector(".productButton");
-const payment = document.querySelector(".payment");
-const close = document.querySelector(".close");
-
-productButton.addEventListener("click", () => {
+function openPayment() {
+  const payment = document.querySelector(".payment");
   payment.style.display = "flex";
-});
+}
+
+function closePayment() {
+  const payment = document.querySelector(".payment");
+  payment.style.display = "none";
+}
+
+// const productButton = document.querySelector(".productButton");
+// const payment = document.querySelector(".payment");
+// const close = document.querySelector(".close");
+
+// productButton.addEventListener("click", () => {
+//   payment.style.display = "flex";
+// });
 
 close.addEventListener("click", () => {
   payment.style.display = "none";
