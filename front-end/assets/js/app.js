@@ -145,3 +145,4 @@ function closePayment() {
 close.addEventListener("click", () => {
   payment.style.display = "none";
 });
+
