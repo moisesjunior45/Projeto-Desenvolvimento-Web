@@ -146,3 +146,12 @@ close.addEventListener("click", () => {
   payment.style.display = "none";
 });
 
+function openLogin() {
+  const login = document.querySelector(".login");
+  login.style.display = "flex";
+}
+
+function closeLogin() {
+  const login = document.querySelector(".login");
+  login.style.display = "none";
+}
