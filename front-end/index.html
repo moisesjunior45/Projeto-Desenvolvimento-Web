@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    
     <div class="login">
         <h1 class="payTitle">Cadastrar-se</h1>
         <label>Nome e Sobrenome</label>
@@ -126,7 +127,34 @@
         </div>
     </div>
 
+    <div class="payment">
+        <h1 class="payTitle">Informação Pessoal</h1>
+        <label>Nome e Sobrenome</label>
+        <input type="text" placeholder="Gleydson Collins LEE" class="payInput">
+        <label>Número Telefone</label>
+        <input type="text" placeholder="(xx)xxxxx-xxxx" class="payInput">
+        <label>Endereço</label>
+        <input type="text" placeholder="AV. Boa Viagem xxx" class="payInput">
+        <label>CPF</label>
+        <input type="text" placeholder="xxx.xxx.xxx-xx" class="payInput">
+        <h1 class="payTitle">Cartão de Credito</h1>
+        <div class="cardIcons">
+            <img src="assets/img/visa.png" width="40" alt="" class="cardIcon">
+            <img src="assets/img/master.png" alt="" width="40" class="cardIcon">
+        </div>
+        <input type="password" class="payInput" placeholder="Card Number">
+        <div class="cardInfo">
+            <input type="text" placeholder="mm" class="payInput sm">
+            <input type="text" placeholder="yyyy" class="payInput sm">
+            <input type="text" placeholder="cvv" class="payInput sm">
+        </div>
+        <h1 class="payTitle">PIX - BORA DE ZERO</h1>
+        <img src="./assets/img/1.png" width="100" alt="" class="cardIcon">
 
+
+        <button class="payButton">Finalizar Compra!</button>
+        <span class="close" onclick="closePayment();">X</span>
+    </div>
 
     <div class="product" id="product">
         <div class="productDetails">
@@ -185,32 +213,7 @@
             </div>
            
         </div>
-        <div class="payment">
-            <h1 class="payTitle">Informação Pessoal</h1>
-            <label>Nome e Sobrenome</label>
-            <input type="text" placeholder="Gleydson Collins LEE" class="payInput">
-            <label>Número Telefone</label>
-            <input type="text" placeholder="(81)99998-0909" class="payInput">
-            <label>Endereço</label>
-            <input type="text" placeholder="AV. Boa Viagem 556" class="payInput">
-            <h1 class="payTitle">Cartão de Credito</h1>
-            <div class="cardIcons">
-                <img src="assets/img/visa.png" width="40" alt="" class="cardIcon">
-                <img src="assets/img/master.png" alt="" width="40" class="cardIcon">
-            </div>
-            <input type="password" class="payInput" placeholder="Card Number">
-            <div class="cardInfo">
-                <input type="text" placeholder="mm" class="payInput sm">
-                <input type="text" placeholder="yyyy" class="payInput sm">
-                <input type="text" placeholder="cvv" class="payInput sm">
-            </div>
-            <h1 class="payTitle">PIX - BORA DE ZERO</h1>
-            <img src="./assets/img/1.png" width="100" alt="" class="cardIcon">
-
-
-            <button class="payButton">Finalizar Compra!</button>
-            <span class="close" onclick="closePayment();">X</span>
-        </div>
+       
     </div>
 
 
@@ -229,16 +232,16 @@
                 </div>
                 <div class="carousel-inner" id="size-carousel">
                     <div class="carousel-item active">
-                        <img src="assets/img/bannner 1.png" class="d-block w-100" alt="...">
+                        <img src="./assets/img/banner 1.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/banner 2.png" class="d-block w-100" alt="...">
+                        <img src="./assets/img/banner 2.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/banner 3.png" class="d-block w-100" alt="...">
+                        <img src="./assets/img/banner 3.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/banner 4.png" class="d-block w-100" alt="...">
+                        <img src="./assets/img/banner 4.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
