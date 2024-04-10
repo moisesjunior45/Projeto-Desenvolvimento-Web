@@ -29,7 +29,7 @@ public class PedidoModel {
     private String status;
 
     @OneToMany(mappedBy = "pedido")
-    private List<PedidoProduto> pedidoProdutos;
+    private List<PedidoBebida> pedidoProdutos;
 
 	public ClienteModel getCliente() {
 		return cliente;
@@ -55,11 +55,11 @@ public class PedidoModel {
 		this.status = status;
 	}
 
-	public List<PedidoProduto> getPedidoProdutos() {
+	public List<PedidoBebida> getPedidoProdutos() {
 		return pedidoProdutos;
 	}
 
-	public void setPedidoProdutos(List<PedidoProduto> pedidoProdutos) {
+	public void setPedidoProdutos(List<PedidoBebida> pedidoProdutos) {
 		this.pedidoProdutos = pedidoProdutos;
 	}
 
