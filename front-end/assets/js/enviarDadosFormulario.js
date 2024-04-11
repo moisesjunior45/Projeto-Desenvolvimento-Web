@@ -1,4 +1,4 @@
-function enviarDados() {
+function enviarClientes() {
     const formulario = document.getElementById('formularioCliente');
 
     formulario.addEventListener('submit', evento => {
@@ -7,7 +7,7 @@ function enviarDados() {
         const formData = new FormData(formulario);
         const data = Object.fromEntries(formData);
 
-        fetch('https://reqres.in/api/users', {
+        fetch('http://localhost:8080/clientes', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
