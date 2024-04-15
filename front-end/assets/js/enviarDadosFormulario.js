@@ -1,30 +1,34 @@
-function enviarClientes() {
-    const formulario = document.getElementById('formularioCliente');
+function enviarCliente() {
 
-    formulario.addEventListener('submit', evento => {
-        evento.preventDefault();
+    const clienteData = {
+        nome: document.getElementById('nome').value,
+        cpf: document.getElementById('cpf').value,
+        email: document.getElementById('email').value,
+        endereco: document.getElementById('endereco').value,
+        telefone: document.getElementById('telefone').value,
+        senha: document.getElementById('senha').value,
+        confirmarSenha: document.getElementById('confirmar_senha').value
+    };
 
-        const formData = new FormData(formulario);
-        const data = Object.fromEntries(formData);
-
-        fetch('http://localhost:8080/clientes', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        }).then(response => {
+    fetch('http://localhost:8080/clientes', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(clienteData)
+    })
+        .then(response => {
+            console.log(response);
             if (response.ok) {
-                return response.json(); // ou response.text() se a resposta não for JSON
+                return response.json();
             }
             throw new Error('A solicitação falhou!');
         })
         .then(data => {
-            console.log(data); // Trata a resposta do servidor
+            console.log(data);
             alert('Cliente cadastrado com sucesso!');
         })
         .catch(error => {
             console.error('Houve um problema com a operação fetch: ', error);
         });
-    })
 }
