@@ -1,14 +1,4 @@
-@media (max-width: 1200px) {
-  .content {
-    width: 45%;
-  }
-}
-@media (max-width: 750px) {
-  
-}
-
-@media screen and (max-width: 750px) {
-  /* Menu */
+@media screen and (max-width: 600px) {
     nav {
       padding: 20px;
     }
@@ -26,8 +16,7 @@
       font-weight: 700;
       font-size: 20px;
     }
-
-  /* Banner */
+  
     .slider {
       clip-path: none;
     }
@@ -55,15 +44,45 @@
     .features {
       flex-direction: column;
     }
-
-    /* Card */
-    .content {
-      width: 100%;
+  
+    .product {
+      clip-path: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-
-    /* Carrosel */
-
-    /* footer */
+  
+    .productImg {
+      width: 80%;
+    }
+  
+    .productDetails {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      top: 0;
+    }
+  
+    .productTitle {
+      font-size: 50px;
+      margin: 0;
+    }
+  
+    .gallery {
+      display: none;
+    }
+  
+    .newSeason {
+      flex-direction: column;
+    }
+  
+    .nsItem:nth-child(2) {
+      padding: 50px;
+    }
   
     footer {
       flex-direction: column;
