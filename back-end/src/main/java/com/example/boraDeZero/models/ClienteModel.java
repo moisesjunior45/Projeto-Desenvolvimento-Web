@@ -1,5 +1,7 @@
 package com.example.boraDeZero.models;
 
+import org.springframework.data.annotation.Transient;
+
 //import java.util.Objects;
 
 import jakarta.persistence.Entity;
@@ -26,6 +28,8 @@ public class ClienteModel {
     private String telefone;
     private String email;
     private String endereco;
-	
+    private String senha;
+    @Transient // Este campo não será persistido no banco de dados
+    private String confirmarSenha;
 
 }
