@@ -8,12 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.main-content {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 8rem 3rem;
-}
-
 body {
   font-family: "Lato", sans-serif;
   padding: 0;
@@ -33,7 +27,7 @@ nav {
   justify-content: space-between;
 }
 
-.limitedOffer { 
+.limitedOffer {
   border: none;
   background-color: #000000;
   color: #00ff2a;
@@ -71,7 +65,6 @@ nav {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
   overflow: hidden;
   min-height: 100vh;
-  /* min-width: 100vw; */
 }
 
 .sliderWrapper {
@@ -118,7 +111,6 @@ nav {
   font-weight: 300;
   text-align: center;
   color: white;
-  border: 1px solid gray;
   z-index: 1;
 }
 
@@ -133,6 +125,8 @@ nav {
   background-color: black;
   z-index: 1;
   cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .buyButton:hover {
@@ -140,7 +134,23 @@ nav {
   color: black;
 }
 
+.myBtn {
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  border: 1px solid gray;
+  background-color: black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
 
+.myBtn:hover {
+  background-color: gray;
+  color: black;
+  border: 1px solid black;
+}
 
 .sliderItem:nth-child(1) .sliderPrice {
   color: #ffffff;
@@ -215,18 +225,17 @@ nav {
   width: 500px;
   height: 550px;
   background-color: white;
-  position: fixed; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 10px 50px;
   display: none;
   flex-direction: column;
-  z-index: 9999; 
+  z-index: 9999;
   -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
 }
-
 
 .payTitle {
   font-size: 20px;
@@ -376,7 +385,7 @@ label {
   margin: 0 auto;
 }
 
-
+/* Footer */
 
 footer {
   display: flex;
@@ -440,123 +449,7 @@ footer {
   font-size: 14px;
 }
 
-@media screen and (max-width: 480px) {
-  nav {
-    padding: 20px;
-  }
-
-  .search {
-    display: none;
-  }
-
-  .navBottom {
-    flex-wrap: wrap;
-  }
-
-  .menuItem {
-    margin: 20px;
-    font-weight: 700;
-    font-size: 20px;
-  }
-
-  .slider {
-    clip-path: none;
-  }
-
-  .sliderImg {
-    width: 90%;
-  }
-
-  .sliderBg {
-    width: 100%;
-    height: 100%;
-  }
-
-  .sliderTitle {
-    display: none;
-  }
-
-  .sliderPrice {
-    top: unset;
-    bottom: -50;
-    left: 0;
-    background-color: lightgrey;
-  }
-
-  .buyButton {
-    right: 0;
-    top: 0;
-  }
-
-  .features {
-    flex-direction: column;
-  }
-
-  .product {
-    clip-path: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .productImg {
-    width: 80%;
-  }
-
-  .productDetails {
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    top: 0;
-  }
-
-  .productTitle {
-    font-size: 50px;
-    margin: 0;
-  }
-
-  .gallery {
-    display: none;
-  }
-
-  .newSeason {
-    flex-direction: column;
-  }
-
-  .nsItem:nth-child(2) {
-    padding: 50px;
-  }
-
-  footer {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footerLeft {
-    padding: 20px;
-    width: 90%;
-  }
-
-  .footerRight {
-    padding: 20px;
-    width: 90%;
-    align-items: center;
-    background-color: whitesmoke;
-  }
-
-  .payment {
-    width: 90%;
-    padding: 20px;
-  }
-  .login {
-    width: 90%;
-    padding: 20px;
-  }
-}
+/* Modal */
 
 .modal {
   display: none;
@@ -567,11 +460,11 @@ footer {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-  background-color: #000000;
+  background-color: #fff;
   margin: 5% auto;
   padding: 20px;
   border-radius: 8px;
@@ -581,7 +474,10 @@ footer {
 }
 
 .close {
-  color: #000000;
+  color: #aaa;
+  background-color: #000000;
+  padding: 12px;
+  border-radius: 50%;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -589,36 +485,36 @@ footer {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
 
 #formularioCliente input[type="text"],
 #formularioCliente input[type="email"],
-#formularioCliente input[type="tel"] {
-  width: 100%;
+#formularioCliente input[type="tel"],
+#formularioCliente input[type="password"] {
+  width: calc(100% - 22px); /* Considerando a largura do padding e da borda  */
   padding: 10px;
-  margin: 5px 0 15px 0;
-  border: 1px solid #000000;
+  margin: 0 auto;
+  border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  display: block; /* Garante que os elementos sejam exibidos em uma linha */
 }
 
-#formularioCliente input[type="button"] {
-  background-color: #4CAF50; /* Verde */
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
+#formularioCliente button[type="submit"] {
+  width: calc(100% - 22px); /* Considerando a largura do padding e da borda */
+  background-color: #4caf50; /* Verde*/
+  color: white;
+  padding: 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  width: 100%;
   margin-top: 10px;
 }
 
-#formularioCliente input[type="button"]:hover {
+#formularioCliente button[type="submit"]:hover {
   background-color: #45a049; /* Tom de verde mais escuro */
 }
-
-
