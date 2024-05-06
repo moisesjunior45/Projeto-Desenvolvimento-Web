@@ -6,7 +6,6 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,7 +27,6 @@ public class ClienteController {
 	@Autowired
 	ClienteRepository clienterepository;
 	
-	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@PostMapping("/clientes")
 	public ResponseEntity<ClienteModel> saveCliente(@RequestBody @Valid ClienteRecordDto clienteRecordDto){
 		var clienteModel = new ClienteModel();
@@ -37,14 +35,12 @@ public class ClienteController {
 		
 	}
 	
-	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@GetMapping("/clientes")
 	public ResponseEntity<List<ClienteModel>> getAllClientes() {
 	    List<ClienteModel> clientes = clienterepository.findAll();
 	    return ResponseEntity.ok(clientes);
 	}
 	
-	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@GetMapping("/clientes/{id}")
 	public ResponseEntity<ClienteModel> getClienteById(@PathVariable Integer id) {
 	    return clienterepository.findById(id)
@@ -52,7 +48,6 @@ public class ClienteController {
 	            .orElse(ResponseEntity.notFound().build());
 	}
 	
-	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@PutMapping("/clientes/{id}")
 	public ResponseEntity<ClienteModel> updateCliente(@PathVariable Integer id,
 	                                                  @RequestBody @Valid ClienteRecordDto clienteRecordDto) {
@@ -65,7 +60,6 @@ public class ClienteController {
 	            .orElse(ResponseEntity.notFound().build());
 	}
 	
-	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@DeleteMapping("/clientes/{id}")
 	public ResponseEntity<Void> deleteCliente(@PathVariable Integer id) {
 	    return clienterepository.findById(id)
