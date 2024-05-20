@@ -142,9 +142,9 @@ function closePayment() {
 //   payment.style.display = "flex";
 // });
 
-close.addEventListener("click", () => {
+/*close.addEventListener("click", () => {
   payment.style.display = "none";
-});
+});*/
 
 function openLogin() {
   const login = document.querySelector(".login");

@@ -54,7 +54,9 @@
 
 
 
-                <button type="submit" onclick="enviarCliente()">Cadastrar</button>
+                <!-- <button type="submit" onclick="enviarCliente()">Cadastrar</button> -->
+                <button type="submit" onclick="enviarCliente(); event.preventDefault();">Cadastrar</button>
+
             </form>
         </div>
     </div>
@@ -64,13 +66,13 @@
     <div id="modal-login" class="modal">
         <div class="modal-content">
             <span class="close close-login">&times;</span>
-            <form id="formularioCliente">
+            <form id="formularioClienteLogin">
 
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required><br>
+                <input type="email" id="email1" name="email1" placeholder="Digite seu E-mail" required><br>
 
                 <label for="senha">Senha:</label><br>
-                <input type="password" id="senha" name="Senha" placeholder="Digite sua senha" required><br>
+                <input type="password" id="senha1" name="Senha1" placeholder="Digite sua senha" required><br>
 
 
 
@@ -369,6 +371,44 @@
     <script src="assets/js/enviarDadosFormulario.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/modal"></script>
+    <!--<script>
+        function enviarCliente() {
+            const clienteData = {
+                nome: document.getElementById('nome').value,
+                cpf: document.getElementById('cpf').value,
+                email: document.getElementById('email').value,
+                endereco: document.getElementById('endereco').value,
+                telefone: document.getElementById('telefone').value,
+                senha: document.getElementById('senha').value,
+                confirmarSenha: document.getElementById('confirmar_senha').value
+            };
+
+            fetch('http://localhost:8080/clientes', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(clienteData)
+            })
+            .then(response => {
+                console.log(response); // Adicione esta linha para ver o objeto de resposta completo
+                if (response.ok) {
+                    return response.json(); // ou response.text() se a resposta não for JSON
+                }
+                throw new Error('A solicitação falhou!');
+            })
+            .then(data => {
+                console.log(data); // Trata a resposta do servidor
+                alert('Cliente cadastrado com sucesso!');
+            })
+            .catch(error => {
+                console.error('Houve um problema com a operação fetch: ', error);
+            });
+        }
+    </script>-->
+    
+                
+            
 
 </body>
 
