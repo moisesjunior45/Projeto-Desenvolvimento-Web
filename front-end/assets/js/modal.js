@@ -37,8 +37,8 @@ spanLogin.onclick = function () {
 window.onclick = function (event) {
     if (event.target == modalCadastro) {
         modalCadastro.style.display = "none";
-    } 
+    }
     if (event.target == modalLogin) {
         modalLogin.style.display = "none";
-    } 
+    }
 }
