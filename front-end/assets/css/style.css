@@ -112,16 +112,16 @@ nav {
 
 .buyButton {
   position: absolute;
-  top: 50%;
-  right: 12%;
-  font-size: 25px;
-  font-weight: 900;
-  color: white;
-  border: 1px solid gray;
-  background-color: black;
+  top: 22%;
+  right: 80%;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   z-index: 1;
   cursor: pointer;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
 }
 
@@ -377,7 +377,7 @@ label {
 .content button {
   text-align: center;
   font-size: 24px;
-  color: #fff;
+  color: #ffffff;
   width: 100%;
   padding: 20px;
   border: 0;
@@ -388,16 +388,16 @@ label {
   border-bottom-left-radius: 20px;
 }
 .bui-1 {
-  background: #2183a2;
+  background: #22cbff;
 }
 .bui-2 {
-  background: #3b3e6e;
+  background: #1bd835;
 }
 .bui-3 {
-  background: #0b0b0b;
+  background: #7c4af1;
 }
 .bui-4 {
-  background: #ff9f43;
+  background: #fc8c23;
 }
 
 /* Carrosel */
