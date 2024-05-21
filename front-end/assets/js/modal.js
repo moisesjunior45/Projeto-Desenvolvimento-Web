@@ -42,3 +42,15 @@ window.onclick = function (event) {
         modalLogin.style.display = "none";
     }
 }
+
+
+// Abrir e fechar modal de pagamentos
+function openPayment() {
+    const payment = document.querySelector(".payment");
+    payment.style.display = "flex";
+}
+
+function closePayment() {
+    const payment = document.querySelector(".payment");
+    payment.style.display = "none";
+}
