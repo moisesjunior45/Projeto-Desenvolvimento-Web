@@ -14,7 +14,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <title>Bora de Zero Site</title>
+    <title>Bora de Zero</title>
 </head>
 
 <body>
@@ -54,7 +54,7 @@
 
 
 
-                <button type="submit" onclick="enviarCliente()">Cadastrar</button>
+                <button type="submit" onclick="enviarCliente(); validarCadastro();">Cadastrar</button>
             </form>
         </div>
     </div>
@@ -96,7 +96,8 @@
             </div>
             <div class="navItem">
                 <button id="myBtn-cadastro" class="myBtn">CADASTRO</button>
-                <button id="myBtn-login" class="myBtn">LOGIN</button>
+                <button id="myBtn-login" class="myBtn"><i class="fa-regular fa-user"></i></button>
+
             </div>
         </div>
         </div>
@@ -108,7 +109,7 @@
 
         <div class="sliderWrapper">
             <div class="sliderItem">
-                <img src="assets/img/heineken HD 0.png" width="600" height="800" alt="" class="sliderImg">
+                <img src="assets/img/heineken.png" width="600" height="800" alt="" class="sliderImg">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">HEINEKEN</br> 0%</br>ÁLCOOL</h1>
                 <h2 class="sliderPrice">R$8,99</h2>
@@ -117,7 +118,7 @@
                 </a>
             </div>
             <div class="sliderItem">
-                <img src="assets/img/vinho sem alcool.png" height="730" alt="" class="sliderImg">
+                <img src="assets/img/vinho navaronne.png" height="730" alt="" class="sliderImg">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">VINHO</br>NAVARONNE</br>SEM ÁLCOOL</h1>
                 <h2 class="sliderPrice">R$80,00</h2>
@@ -126,7 +127,7 @@
                 </a>
             </div>
             <div class="sliderItem">
-                <img src="assets/img/gin sem alcool.png" height="800" alt="" class="sliderImg">
+                <img src="assets/img/gin gordon's.png" height="800" alt="" class="sliderImg">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">GIN GORDON'S</br>SEM</br>ÁLCOOL</h1>
                 <h2 class="sliderPrice">R$70,00</h2>
@@ -135,7 +136,7 @@
                 </a>
             </div>
             <div class="sliderItem">
-                <img src="assets/img/espumante sem alcool.png" width="500" height="750" alt="" class="sliderImg">
+                <img src="assets/img/freixenet.png" width="500" height="750" alt="" class="sliderImg">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">ESPUMANTE</br>FREIXENET</br>SEM ÁLCOOL</h1>
                 <h2 class="sliderPrice">R$110,00</h2>
@@ -211,45 +212,45 @@
         <h2>Nossos produtos</h2>
         <div class="gallery">
             <div class="content">
-                <img src="assets/img/cerveja plier.jpeg">
-                <h3>PLIER 0%</h3>
-                <P>Cerveja brasileira zero álcool.</P>
+                <img src="assets/img/heineken.png">
+                <h3>HEINEKEN</h3>
+                <P>Cerveja holandesa zero álcool.</P>
                 <h6>R$20,00</h6>
                 <ul>
-                    <li><i class="fa fa-star checkend"></i></li>
-                    <li><i class="fa fa-star checkend"></i></li>
-                    <li><i class="fa fa-star "></i></li>
-                    <li><i class="fa fa-star "></i></li>
-                    <li><i class="fa fa-star "></i></li>
-                </ul>
-                <button class="bui-1" onclick="openPayment();">Comprar</button>
-            </div>
-
-
-
-            <div class="content">
-                <img src="assets/img/budweiser_1.png">
-                <h3>BUDWEISER 0%</h3>
-                <P>Cerveja Americana zero álcool</P>
-                <h6>R$20,00</h6>
-                <ul>
-
                     <li><i class="fa fa-star checkend"></i></li>
                     <li><i class="fa fa-star checkend"></i></li>
                     <li><i class="fa fa-star checkend"></i></li>
                     <li><i class="fa fa-star checkend"></i></li>
                     <li><i class="fa fa-star checkend"></i></li>
                 </ul>
-                <button class="bui-2" onclick="openPayment();">Comprar</button>
+                <button class="bui-2"><a href="assets/html/carrinho.html">Comprar</a></button>
+            </div>
+
+
+
+            <div class="content">
+                <img src="assets/img/vinho navaronne.png">
+                <h3>NAVARONNE</h3>
+                <P>Vinho Navaronne zero álcool</P>
+                <h6>R$80,00</h6>
+                <ul>
+
+                    <li><i class="fa fa-star checkend"></i></li>
+                    <li><i class="fa fa-star checkend"></i></li>
+                    <li><i class="fa fa-star checkend"></i></li>
+                    <li><i class="fa fa-star checkend"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <button class="bui-2"><a href="assets/html/carrinho.html">Comprar</a></button>
 
             </div>
 
 
             <div class="content">
-                <img src="assets/img/heineken capt.jpg">
-                <h3>HEINEKEN 0%</h3>
-                <P>Cerveja holandesa zero álcool</P>
-                <h6>R$20,00</h6>
+                <img src="assets/img/gin gordon's.png">
+                <h3>GIN GORDON'S</h3>
+                <P>Gin Gordon's zero álcool</P>
+                <h6>R$70,00</h6>
                 <ul>
                     <li><i class="fa fa-star checkend"></i></li>
                     <li><i class="fa fa-star checkend"></i></li>
@@ -257,24 +258,25 @@
                     <li><i class="fa fa-star checkend"></i></li>
                     <li><i class="fa fa-star"></i></li>
                 </ul>
-                <button class="bui-3" onclick="openPayment();">Comprar</button>
+                <button class="bui-2"><a href="assets/html/carrinho.html">Comprar</a></button>
 
             </div>
 
             <div class="content">
-                <img src="assets/img/estrella galicia_1.png">
-                <h3>ESTRELLA GALICIA 0%</h3>
-                <P>Cerveja espanhola zero álcool.</P>
-                <h6>R$20,00</h6>
+                <img src="assets/img/freixenet.png">
+                <h3>FREIXENET</h3>
+                <P>Espumante Freixenet zero álcool.</P>
+                <h6>R$110,00</h6>
                 <ul>
 
                     <li><i class="fa fa-star checkend"></i></li>
                     <li><i class="fa fa-star checkend"></i></li>
                     <li><i class="fa fa-star checkend"></i></li>
-                    <li><i class="fa fa-star "></i></li>
-                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star checkend"></i></li>
+                    <li><i class="fa fa-star checkend"></i></li>
                 </ul>
-                <button class="bui-4" onclick="openPayment();">Comprar</button>
+                <!-- <button class="bui-2" onclick="openPayment();">Comprar</button> -->
+                <button class="bui-2"><a href="assets/html/carrinho.html">Comprar</a></button>
 
             </div>
         </div>

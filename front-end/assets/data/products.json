@@ -1,0 +1,99 @@
+[
+    {
+        "id": 1,
+        "name":"HEINEKEN",
+        "price":  10,
+        "image": "../img/heineken.png"
+    },
+    {
+        "id": 2,
+        "name":" ESTRELA GALÍCIA",
+        "price": 7.40,
+        "image": "../img/estrella galicia_1.png"
+    },
+    {
+        "id": 3,
+        "name":" BUDWEIZER",
+        "price": 10,
+        "image": "../img/budweiser_1.png"
+    },
+    {
+        "id": 4,
+        "name":" DUSHY",
+        "price": 30,
+        "image": "../img/dushy espumante_1.png"
+    },
+    {
+        "id": 5,
+        "name":" FREIXENET",
+        "price": 110,
+        "image": "../img/freixenet.png"
+    },
+    {
+        "id": 6,
+        "name":" FESTILLANT",
+        "price": 64.50,
+        "image": "../img/festillant.png"
+    },
+    {
+        "id": 7,
+        "name":" FESTY",
+        "price": 25,
+        "image": "../img/festy.png"
+    },
+    {
+        "id": 8,
+        "name":" SANTA DIGNA",
+        "price": 200,
+        "image": "../img/santa digna 0_.png"
+    },
+    {
+        "id": 9,
+        "name":"NAVARONNE",
+        "price": 80,
+        "image": "../img/vinho navaronne.png"
+    },
+    {
+        "id": 10,
+        "name":" GIN GORDON'S",
+        "price": 70,
+        "image": "../img/gin gordon's.png"
+    },
+    {
+        "id": 11,
+        "name":"PAULANER",
+        "price": 16.90,
+        "image": "../img/paulaner.png"
+    },
+    {
+        "id": 12,
+        "name":"VINHO TINTO",
+        "price": 45.90,
+        "image": "../img/vinho_tinto.png"
+    },
+    {
+        "id": 13,
+        "name":"COLÔNIA",
+        "price": 5.80,
+        "image": "../img/colonia.png"
+    },
+    {
+        "id": 14,
+        "name":"NULLA GIN",
+        "price": 69.90,
+        "image": "../img/nullagin.png"
+    },
+    {
+        "id": 15,
+        "name":"SUCO DE UVA",
+        "price": 11.99,
+        "image": "../img/suco_uva_natural_one.png"
+    },
+    {
+        "id": 16,
+        "name":"SUCO DE LARANJA",
+        "price": 11.99,
+        "image": "../img/suco_laranja_natural_one.png"
+    }
+
+]
