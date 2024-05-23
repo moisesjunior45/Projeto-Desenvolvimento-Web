@@ -10,23 +10,19 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "TB_Clientes")
+@Table(name = "TB_Bebidas")
 @Getter
 @Setter
 @EqualsAndHashCode
-public class ClienteModel {
-  @Id
-  @GeneratedValue(strategy = GenerationType.SEQUENCE)
-  private int id_Cliente;
-  
-  
-  private String nome;
-  private String cpf;
-  private String telefone;
-  private String email;
-  private String endereco;
-  private String senha;
-  
+public class BebidaModel {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int id_Bebida;
+	private String nome;
+	private double preco;
+	private String descricao;
+	
+	
 
 }
-

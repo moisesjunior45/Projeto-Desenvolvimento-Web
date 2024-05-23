@@ -1,4 +1,4 @@
-package com.example.BoraDe0.Controllers;
+package com.example.BoraDe0.controllers;
 
 import java.util.List;
 
@@ -15,13 +15,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.BoraDe0.ClienteRepositorie.ClienteRepository;
-import com.example.BoraDe0.Models.ClienteModel;
 import com.example.BoraDe0.dtos.ClienteRecordDto;
-
-//import com.example.boraDe0.dtos.ClienteRecordDto;
-//import com.example.boraDe0.models.ClienteModel;
-//import com.example.boraDe0.repositories.ClienteRepository;
+import com.example.BoraDe0.models.ClienteModel;
+import com.example.BoraDe0.repositories.ClienteRepository;
 
 import jakarta.validation.Valid;
 
