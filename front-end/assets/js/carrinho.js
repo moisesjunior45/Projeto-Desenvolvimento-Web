@@ -15,6 +15,20 @@ closeCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 })
 
+const calculateTotal = () => {
+    let total = 0;
+    cart.forEach(item => {
+        let product = products.find(product => product.id == item.product_id);
+        total += product.price * item.quantity;
+    });
+    return total;
+}
+
+const addTotalToHTML = () => {
+    let totalHTML = document.querySelector('.total'); // Adicione um elemento com a classe 'total' no seu HTML
+    totalHTML.textContent = `Total: R$${calculateTotal().toFixed(2)}`;
+}
+
 const addDataToHTML = () => {
     // remove datas default from HTML
 
@@ -88,10 +102,12 @@ const addCartToHTML = () => {
                     <span>${item.quantity}</span>
                     <span class="plus">+</span>
                 </div>
-            `;
+                
+                `;
         })
     }
     iconCartSpan.innerText = totalQuantity;
+    addTotalToHTML(); // Adicione esta linha para atualizar o total sempre que o carrinho for atualizado
 }
 
 listCartHTML.addEventListener('click', (event) => {

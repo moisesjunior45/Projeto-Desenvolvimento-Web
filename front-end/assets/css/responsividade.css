@@ -1,6 +1,26 @@
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .content {
     width: 45%;
+  }
+
+  .payment {
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+    display: none;
+  }
+
+  .payInput {
+    width: 100%;
+  }
+
+  .cardInfo {
+    flex-direction: column;
+  }
+
+  .cardInfo .payInput.sm {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
@@ -75,12 +95,19 @@
     background-color: whitesmoke;
   }
 
-  .payment {
-    width: 90%;
-    padding: 20px;
-  }
   .login {
     width: 90%;
     padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment {
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .cardIcons {
+    justify-content: center;
   }
 }
